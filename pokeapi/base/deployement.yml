@@ -18,3 +18,19 @@ spec:
         name: pokeapi
         ports:
         - containerPort: 3000
+        env:
+        - name: POKEDEX_NAME
+          valueFrom:
+            configMapKeyRef:
+              name: pokeapi
+              key: POKEDEX_NAME
+        - name: POKEDEX_START_NUMBER
+          valueFrom:
+            configMapKeyRef:
+              name: pokeapi
+              key: POKEDEX_START_NUMBER
+        - name: POKEDEX_END_NUMBER
+          valueFrom:
+            configMapKeyRef:
+              name: pokeapi
+              key: POKEDEX_END_NUMBER
