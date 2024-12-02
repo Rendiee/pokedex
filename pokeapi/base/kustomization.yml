@@ -1,4 +1,4 @@
-namePrefix: kustomize-
+namePrefix: pokeapi
 
 resources:
 - deployement.yml
