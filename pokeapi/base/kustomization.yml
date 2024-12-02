@@ -1,4 +1,4 @@
-namePrefix: pokeapi
+namespace: pokeapi
 
 resources:
 - deployement.yml
